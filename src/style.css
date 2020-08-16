@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: auto;
+}
+
+img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: auto;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .clock {
+  color: white;
+  font-size: 4rem;
+}
+
+.container .js-name input {
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  color: white;
+}
+.container .js-name input::placeholder {
+  color: white;
+}
+
+.container .js-username {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container .todo_list {
+  list-style: none;
+  color: white;
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .todo_list button {
+  font-size: 0.9rem;
+}
+
+.container .js-todo input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  width: 11rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.container .js-todo input::placeholder {
+  color: pink;
+  text-align: center;
+}
+
+.js-complete {
+  text-decoration: line-through;
+}
+
+.weather {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+
+  color: white;
+}
